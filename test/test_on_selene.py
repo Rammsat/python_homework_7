@@ -23,4 +23,3 @@ def test_on_selene():
     browser.element('#issues-tab').click()
 
     assert browser.element(by.partial_text("#76")).should(be.visible)
-

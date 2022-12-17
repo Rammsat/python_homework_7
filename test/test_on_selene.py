@@ -13,6 +13,7 @@ from allure_commons.types import Severity
 @allure.link("https://github.com", name="Testing")
 def test_on_selene():
     browser.open('https://github.com')
+    browser.driver.maximize_window()
 
     browser.element('.header-search-input').click()
     browser.element('.header-search-input').send_keys("eroshenkoam/allure-example")

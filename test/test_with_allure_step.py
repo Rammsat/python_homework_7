@@ -14,6 +14,7 @@ from selene.support.shared import browser
 def test_with_allure_step():
     with allure.step("Открыть github"):
         browser.open('https://github.com')
+        browser.driver.maximize_window()
 
     with allure.step("Найти репозиторий"):
         browser.element('.header-search-input').click()
